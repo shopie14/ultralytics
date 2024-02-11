@@ -42,7 +42,7 @@ class YOLOv8Seg:
         # Create color palette
         self.color_palette = Colors()
 
-    def __call__(self, im0, conf_threshold=0.4, iou_threshold=0.45, nm=32):
+    def __call__(self, im0, conf_threshold=0.2, iou_threshold=0.45, nm=32):
         """
         The whole pipeline: pre-process -> inference -> post-process.
 

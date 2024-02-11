@@ -216,10 +216,10 @@ class Predictor(BasePredictor):
         point_grids=None,
         points_stride=32,
         points_batch_size=64,
-        conf_thres=0.88,
+        conf_thres=0.5,
         stability_score_thresh=0.95,
         stability_score_offset=0.95,
-        crop_nms_thresh=0.7,
+        crop_nms_thresh=0.45,
     ):
         """
         Perform image segmentation using the Segment Anything Model (SAM).

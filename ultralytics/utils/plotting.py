@@ -434,7 +434,7 @@ class Annotator:
             line_thickness (int): thickness for text display
         """
         angle_text, count_text, stage_text = (f" {angle_text:.2f}", f"Steps : {count_text}", f" {stage_text}")
-        font_scale = 0.6 + (line_thickness / 10.0)
+        font_scale = 0.4 + (line_thickness / 1)
 
         # Draw angle
         (angle_text_width, angle_text_height), _ = cv2.getTextSize(angle_text, 0, font_scale, line_thickness)
